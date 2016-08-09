@@ -1,0 +1,23 @@
+<h1> <%= list_title %> ( <%= total %>)</h1>
+<% if( posts.length ){ %>
+      <ul>
+            <% _.each( posts, function( post ){ %>
+                  <% var nb_comments = post.nb_comments %>
+                  <li>
+				  
+				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
+						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><img class="media-object pull-left" style="width: 87px; height: 58px;" src="<%= post.thumbnail.src %>"></a>
+					<% } %>	
+					
+                        <h2>
+                              <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a>
+                              &nbsp;<small><%= TemplateTags.formatDate(post.date,'d/m/Y') %></small>
+                        </h2>
+                        <p><%= post.excerpt %></p>
+                        <span><%= nb_comments %> comment<% nb_comments > 1 ? print('s') : '' %></span>
+                  </li>
+            <% }); %>
+      </ul>
+<% }else{ %>
+      <p>No post found!</p>
+<% } %>

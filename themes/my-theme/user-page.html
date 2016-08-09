@@ -1,0 +1,17 @@
+<div id="single" id="user-page">
+	<h1>User page</h1>
+	<div id="single-content">
+	<img src="<%= user.gravatar_image_link %>" /> <br>
+            <strong>Login</strong> : <%= user.login %>
+            <br><br>
+            <strong>Role</strong> : <%= user.role %>
+            <br><br>
+            <strong>Capabilities</strong> :
+            <ul>
+                <% _.each( user.capabilities, function( capability ){ %>
+                    <li><%= capability %></li>
+                <% } ); %>
+            </ul>
+			<button type="button" class="btn btn-danger" id="logout">Log out</button>
+	</div>
+</div>

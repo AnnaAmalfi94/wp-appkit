@@ -1,0 +1,84 @@
+  <nav class="navbar navbar-default navbar-fixed-top navbar-md">
+ <div class="container">
+  <div class="navbar-header">
+               <button type="button" class="navbar-toggle sidebar-toggle left-menu-bar-btn"> 
+               <span class="icon-bar">
+               </span> 
+               <span class="icon-bar">
+               </span> 
+               <span class="icon-bar">
+               </span> </button> 
+			   
+			   <div id="hormenu"> <ul><li> <a href="#">
+               <span style="font-size:21px;color:white;" class="fa fa-ellipsis-vertical">
+               </span> </a>
+			    <ul> <!-- Lista annidata: voci del sotto-menu -->
+            <li><a href="#page/tabs/80">Chi sono</a></li>
+            <li style="padding-top:5px;"><a href="#">Faq</a></li>
+            
+        </ul> <!-- Fine del sotto-menu --></li></ul></div><div id="chicca">X</div>
+			   <a href="#" data-toggle="modal" data-target="#contact"> <button type="button" class="navbar-toggle search-btn-onclick"> 
+               <span class="glyphicon glyphicon-search">
+               </span> </button> </a> 
+			   
+			   
+			   
+			   <div class="pull-left" style="padding: 15px 15px;">
+  
+   <a href="#" id="refresh-button" class="sei"><span style="font-size:21px;color:white;line-height:20px;" class="glyphicon glyphicon-refresh">
+               </span></a>
+			   <a href="#" id="go-back" class="sei" style="display:none;"> <span style="font-size:21px;color:white;line-height:20px;" class="glyphicon glyphicon-chevron-left">
+               </span></a></div>
+			   
+               <span class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive logo"/>
+               </span> 
+			   
+			   
+               <div class="dropdown pull-right"> </div>
+            </div>
+			 <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav"> </ul>
+            </div>
+			</div>
+			</nav>
+			<div class="sidebar-overlay"></div>
+			<aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+			<div class="utente"><div id="feedback" style="display:none"></div></div>
+			<div> <%= app_title %> </div>
+			
+ 
+ 
+ 
+<%= menu %>
+ </aside>
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  <div class="container">
+<div id="provah" style="display:none"></div>
+   <%= content %>
+   </div>
+   
+   
+   
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style=" z-index:999999999 !important">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+               </div>
+               <div class="modal-body" align="center">
+                  <h5>Designed By Sharda Enterprises</h5>
+                  <h6>Powered By fastlearning.in</h6>
+               </div>
+               <div class="modal-footer"> <button type="button" class="close-btn" data-dismiss="modal">Close</button> </div>
+            </div>
+         </div>
+      </div>
+   
+   
