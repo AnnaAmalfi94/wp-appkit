@@ -1,2 +1,2 @@
 # wp-appkit
-prova
+wp-appkit with social sharing and onesignal
